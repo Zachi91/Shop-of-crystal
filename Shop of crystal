@@ -1,0 +1,13 @@
+int gold;
+int priceForCrystal = 20;
+int CountOfCrystal;
+
+Console.WriteLine($"Здравствуйте, сегодня кристалы по - {priceForCrystal}. Сколько у вас золота?");
+gold = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Сколько Вам кристалов?");
+CountOfCrystal = Convert.ToInt32(Console.ReadLine());
+
+gold -= priceForCrystal * CountOfCrystal;
+
+Console.WriteLine($"У Вас в мешочке теперь {gold} - золота и {CountOfCrystal} - кристалов.");
+Console.ReadLine();
